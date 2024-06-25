@@ -1,0 +1,103 @@
+import 'package:flutter/material.dart';
+import 'package:laundry_bin/core/theme/color_palette.dart';
+import 'package:laundry_bin/core/theme/extentions/app_typography_extention.dart';
+import 'package:laundry_bin/core/theme/extentions/appcolor_extention.dart';
+
+final _lighttheme = ThemeData(
+    brightness: Brightness.light,
+    scaffoldBackgroundColor: AppColorPalette.light300,
+    appBarTheme: AppBarTheme(backgroundColor: AppColorPalette.white400),
+    extensions: [
+      AppcolorExtention(
+          primary: AppColorPalette.blue400,
+          primarytxt: AppColorPalette.black400,
+          secondarytxt: AppColorPalette.bluegrey400,
+          bg: AppColorPalette.light300,
+          light: AppColorPalette.light400,
+          white: AppColorPalette.white400,
+          warning: AppColorPalette.red400,
+          green: AppColorPalette.green400,
+          bg02: AppColorPalette.blue300),
+      AppTypographyExtention(
+        h1: TextStyle(
+            fontSize: 32,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w500),
+        h1SemiBold: TextStyle(
+            fontSize: 32,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w600),
+        h1Bold: TextStyle(
+            fontSize: 32,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w700),
+        h2: TextStyle(
+            fontSize: 24,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w500),
+        h2SemiBold: TextStyle(
+            fontSize: 24,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w600),
+        h2Bold: TextStyle(
+            fontSize: 24,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w700),
+        h3: TextStyle(
+            fontSize: 20,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w500),
+        h3SemiBold: TextStyle(
+            fontSize: 20,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w600),
+        h3Bold: TextStyle(
+            fontSize: 20,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w700),
+        body: TextStyle(
+            fontSize: 14,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w500),
+        bodyWhite: TextStyle(
+            fontSize: 14,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.white400,
+            fontWeight: FontWeight.w500),
+        bodyLarge: TextStyle(
+            fontSize: 18,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w500),
+        bodySemiBold: TextStyle(
+            fontSize: 14,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w600),
+        bodyLargeSemiBold: TextStyle(
+            fontSize: 18,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w600),
+        bodySmall: TextStyle(
+            fontSize: 10,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w500),
+        bodySmallSemiBold: TextStyle(
+            fontSize: 10,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w600),
+      ),
+    ]);
