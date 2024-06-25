@@ -20,84 +20,54 @@ final _lighttheme = ThemeData(
           bg02: AppColorPalette.blue300),
       AppTypographyExtention(
         h1: TextStyle(
-            fontSize: 32,
+            fontSize: 34,
             fontFamily: 'DMSans',
             color: AppColorPalette.black400,
-            fontWeight: FontWeight.w500),
-        h1SemiBold: TextStyle(
-            fontSize: 32,
-            fontFamily: 'DMSans',
-            color: AppColorPalette.black400,
-            fontWeight: FontWeight.w600),
-        h1Bold: TextStyle(
-            fontSize: 32,
-            fontFamily: 'DMSans',
-            color: AppColorPalette.black400,
-            fontWeight: FontWeight.w700),
+            fontWeight: FontWeight.bold),
         h2: TextStyle(
             fontSize: 24,
             fontFamily: 'DMSans',
             color: AppColorPalette.black400,
-            fontWeight: FontWeight.w500),
-        h2SemiBold: TextStyle(
-            fontSize: 24,
-            fontFamily: 'DMSans',
-            color: AppColorPalette.black400,
-            fontWeight: FontWeight.w600),
-        h2Bold: TextStyle(
-            fontSize: 24,
-            fontFamily: 'DMSans',
-            color: AppColorPalette.black400,
-            fontWeight: FontWeight.w700),
+            fontWeight: FontWeight.bold),
         h3: TextStyle(
             fontSize: 20,
             fontFamily: 'DMSans',
             color: AppColorPalette.black400,
-            fontWeight: FontWeight.w500),
-        h3SemiBold: TextStyle(
-            fontSize: 20,
+            fontWeight: FontWeight.bold),
+        subtitle1: TextStyle(
+            fontSize: 16,
             fontFamily: 'DMSans',
             color: AppColorPalette.black400,
-            fontWeight: FontWeight.w600),
-        h3Bold: TextStyle(
-            fontSize: 20,
-            fontFamily: 'DMSans',
-            color: AppColorPalette.black400,
-            fontWeight: FontWeight.w700),
-        body: TextStyle(
+            fontWeight: FontWeight.bold),
+        subtitle2: TextStyle(
             fontSize: 14,
             fontFamily: 'DMSans',
             color: AppColorPalette.black400,
             fontWeight: FontWeight.w500),
-        bodyWhite: TextStyle(
-            fontSize: 14,
-            fontFamily: 'DMSans',
-            color: AppColorPalette.white400,
-            fontWeight: FontWeight.w500),
-        bodyLarge: TextStyle(
-            fontSize: 18,
+        body1: TextStyle(
+            fontSize: 16,
             fontFamily: 'DMSans',
             color: AppColorPalette.black400,
             fontWeight: FontWeight.w500),
-        bodySemiBold: TextStyle(
+        body2: TextStyle(
             fontSize: 14,
             fontFamily: 'DMSans',
             color: AppColorPalette.black400,
-            fontWeight: FontWeight.w600),
-        bodyLargeSemiBold: TextStyle(
-            fontSize: 18,
-            fontFamily: 'DMSans',
-            color: AppColorPalette.black400,
-            fontWeight: FontWeight.w600),
-        bodySmall: TextStyle(
-            fontSize: 10,
+            fontWeight: FontWeight.w500),
+        caption: TextStyle(
+            fontSize: 12,
             fontFamily: 'DMSans',
             color: AppColorPalette.black400,
             fontWeight: FontWeight.w500),
-        bodySmallSemiBold: TextStyle(
-            fontSize: 10,
+        button1: TextStyle(
+            fontSize: 16,
             fontFamily: 'DMSans',
             color: AppColorPalette.black400,
-            fontWeight: FontWeight.w600),
+            fontWeight: FontWeight.bold),
+        button2: TextStyle(
+            fontSize: 14,
+            fontFamily: 'DMSans',
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.bold),
       ),
     ]);
