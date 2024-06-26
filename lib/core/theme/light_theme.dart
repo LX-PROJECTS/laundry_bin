@@ -3,7 +3,7 @@ import 'package:laundry_bin/core/theme/color_palette.dart';
 import 'package:laundry_bin/core/theme/extentions/app_typography_extention.dart';
 import 'package:laundry_bin/core/theme/extentions/appcolor_extention.dart';
 
-final _lighttheme = ThemeData(
+final lighttheme = ThemeData(
     brightness: Brightness.light,
     scaffoldBackgroundColor: AppColorPalette.light300,
     appBarTheme: AppBarTheme(backgroundColor: AppColorPalette.white400),
@@ -35,21 +35,11 @@ final _lighttheme = ThemeData(
             color: AppColorPalette.black400,
             fontWeight: FontWeight.bold),
         subtitle1: TextStyle(
-            fontSize: 16,
-            fontFamily: 'DMSans',
-            color: AppColorPalette.black400,
-            fontWeight: FontWeight.bold),
-        subtitle2: TextStyle(
             fontSize: 14,
             fontFamily: 'DMSans',
             color: AppColorPalette.black400,
-            fontWeight: FontWeight.w500),
-        body1: TextStyle(
-            fontSize: 16,
-            fontFamily: 'DMSans',
-            color: AppColorPalette.black400,
-            fontWeight: FontWeight.w500),
-        body2: TextStyle(
+            fontWeight: FontWeight.bold),
+        body: TextStyle(
             fontSize: 14,
             fontFamily: 'DMSans',
             color: AppColorPalette.black400,
@@ -59,13 +49,8 @@ final _lighttheme = ThemeData(
             fontFamily: 'DMSans',
             color: AppColorPalette.black400,
             fontWeight: FontWeight.w500),
-        button1: TextStyle(
+        buttontxt: TextStyle(
             fontSize: 16,
-            fontFamily: 'DMSans',
-            color: AppColorPalette.black400,
-            fontWeight: FontWeight.bold),
-        button2: TextStyle(
-            fontSize: 14,
             fontFamily: 'DMSans',
             color: AppColorPalette.black400,
             fontWeight: FontWeight.bold),
