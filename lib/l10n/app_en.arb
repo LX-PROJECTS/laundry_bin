@@ -1,0 +1,13 @@
+ {
+    "appName": "Laundry Bin",
+    "loginLable" : "Login",
+    "welcomeLabel": "Welcome {name}",
+    "@welcomeLabel" : {
+        "description": "This is the welcome text in Login pages",
+        "placeholders": {
+            "name": {
+                "type": "String"
+            }
+        }
+    }
+ }
