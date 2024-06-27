@@ -4,96 +4,95 @@ import 'package:laundry_bin/core/theme/extensions/typography_extention.dart';
 import 'package:laundry_bin/core/theme/extensions/color_extention.dart';
 import 'package:laundry_bin/gen/fonts.gen.dart';
 
-final lighttheme = ThemeData(
+final lightTheme = ThemeData(
     brightness: Brightness.light,
-    scaffoldBackgroundColor: AppColorPalette.blue10,
-    appBarTheme: AppBarTheme(backgroundColor: AppColorPalette.white400),
+    scaffoldBackgroundColor: ColorPalette.blue10,
+    appBarTheme: AppBarTheme(backgroundColor: ColorPalette.white400),
     extensions: [
       ColorExtention(
-          primary: AppColorPalette.blue400,
-          primaryTxt: AppColorPalette.black400,
-          secondaryTxt: AppColorPalette.bluegrey400,
-          backgroundSubtle: AppColorPalette.blue10,
-          light: AppColorPalette.blue20,
-          white: AppColorPalette.white400,
-          warning: AppColorPalette.red400,
-          green: AppColorPalette.green400,
-          background: AppColorPalette.blue300),
+          primary: ColorPalette.blue400,
+          primaryTxt: ColorPalette.black400,
+          secondaryTxt: ColorPalette.bluegrey400,
+          backgroundSubtle: ColorPalette.blue10,
+          white: ColorPalette.white400,
+          warning: ColorPalette.red400,
+          green: ColorPalette.green400,
+          background: ColorPalette.blue300),
       TypographyExtention(
         h1: TextStyle(
             fontSize: 34,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.bold),
         h2: TextStyle(
             fontSize: 24,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.bold),
         h3: TextStyle(
             fontSize: 20,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.bold),
         subtitle1: TextStyle(
             fontSize: 14,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.bold),
         body: TextStyle(
             fontSize: 14,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.w500),
         bodySemiBold: TextStyle(
             fontSize: 14,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.w600),
         bodyBold: TextStyle(
             fontSize: 18,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.bold),
         bodySmall: TextStyle(
             fontSize: 12,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.w500),
         bodySmallBold: TextStyle(
             fontSize: 12,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.w600),
         bodySmallSemiBold: TextStyle(
             fontSize: 12,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.bold),
         bodyLarge: TextStyle(
             fontSize: 18,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.w500),
         bodyLargeSemiBold: TextStyle(
             fontSize: 18,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.w600),
         bodyLargeBold: TextStyle(
             fontSize: 18,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.bold),
         caption: TextStyle(
             fontSize: 12,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.w500),
         buttonTxt: TextStyle(
             fontSize: 14,
             fontFamily: FontFamily.dMSans,
-            color: AppColorPalette.black400,
+            color: ColorPalette.black400,
             fontWeight: FontWeight.bold),
       ),
     ]);

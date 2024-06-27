@@ -7,7 +7,6 @@ class ColorExtention extends ThemeExtension<ColorExtention> {
   final Color primaryTxt;
   final Color secondaryTxt;
   final Color backgroundSubtle;
-  final Color light;
   final Color white;
   final Color warning;
   final Color green;
@@ -17,7 +16,6 @@ class ColorExtention extends ThemeExtension<ColorExtention> {
     required this.primaryTxt,
     required this.secondaryTxt,
     required this.backgroundSubtle,
-    required this.light,
     required this.white,
     required this.warning,
     required this.green,
@@ -29,7 +27,6 @@ class ColorExtention extends ThemeExtension<ColorExtention> {
     Color? primaryTxt,
     Color? secondaryTxt,
     Color? backgroundSubtle,
-    Color? light,
     Color? white,
     Color? warning,
     Color? green,
@@ -40,7 +37,6 @@ class ColorExtention extends ThemeExtension<ColorExtention> {
         primaryTxt: primaryTxt ?? this.primaryTxt,
         secondaryTxt: secondaryTxt ?? this.secondaryTxt,
         backgroundSubtle: backgroundSubtle ?? this.backgroundSubtle,
-        light: light ?? this.light,
         white: white ?? this.white,
         warning: warning ?? this.warning,
         green: green ?? this.green,
@@ -59,7 +55,6 @@ class ColorExtention extends ThemeExtension<ColorExtention> {
         secondaryTxt: Color.lerp(secondaryTxt, other.secondaryTxt, t)!,
         backgroundSubtle:
             Color.lerp(backgroundSubtle, other.backgroundSubtle, t)!,
-        light: Color.lerp(light, other.light, t)!,
         white: Color.lerp(white, other.white, t)!,
         warning: Color.lerp(warning, other.warning, t)!,
         green: Color.lerp(green, other.green, t)!,
