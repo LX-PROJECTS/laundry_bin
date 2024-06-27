@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:laundry_bin/core/theme/color_palette.dart';
-import 'package:laundry_bin/core/theme/extensions/app_typography_extention.dart';
-import 'package:laundry_bin/core/theme/extensions/appcolor_extention.dart';
+import 'package:laundry_bin/core/theme/extensions/typography_extention.dart';
+import 'package:laundry_bin/core/theme/extensions/color_extention.dart';
 import 'package:laundry_bin/gen/fonts.gen.dart';
 
 final lighttheme = ThemeData(
@@ -9,17 +9,17 @@ final lighttheme = ThemeData(
     scaffoldBackgroundColor: AppColorPalette.blue10,
     appBarTheme: AppBarTheme(backgroundColor: AppColorPalette.white400),
     extensions: [
-      AppcolorExtention(
+      ColorExtention(
           primary: AppColorPalette.blue400,
-          primarytxt: AppColorPalette.black400,
-          secondarytxt: AppColorPalette.bluegrey400,
-          bg: AppColorPalette.blue10,
+          primaryTxt: AppColorPalette.black400,
+          secondaryTxt: AppColorPalette.bluegrey400,
+          backgroundSubtle: AppColorPalette.blue10,
           light: AppColorPalette.blue20,
           white: AppColorPalette.white400,
           warning: AppColorPalette.red400,
           green: AppColorPalette.green400,
-          bg2: AppColorPalette.blue300),
-      AppTypographyExtention(
+          background: AppColorPalette.blue300),
+      TypographyExtention(
         h1: TextStyle(
             fontSize: 34,
             fontFamily: FontFamily.dMSans,
@@ -90,7 +90,7 @@ final lighttheme = ThemeData(
             fontFamily: FontFamily.dMSans,
             color: AppColorPalette.black400,
             fontWeight: FontWeight.w500),
-        buttontxt: TextStyle(
+        buttonTxt: TextStyle(
             fontSize: 14,
             fontFamily: FontFamily.dMSans,
             color: AppColorPalette.black400,

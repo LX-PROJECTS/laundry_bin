@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppTypographyExtention extends ThemeExtension<AppTypographyExtention> {
+class TypographyExtention extends ThemeExtension<TypographyExtention> {
 //Default App Typographys
 
   final TextStyle h1;
@@ -17,9 +17,9 @@ class AppTypographyExtention extends ThemeExtension<AppTypographyExtention> {
   final TextStyle bodyLargeSemiBold;
   final TextStyle bodyLargeBold;
   final TextStyle caption;
-  final TextStyle buttontxt;
+  final TextStyle buttonTxt;
 
-  AppTypographyExtention({
+  TypographyExtention({
     required this.h1,
     required this.h2,
     required this.h3,
@@ -34,11 +34,11 @@ class AppTypographyExtention extends ThemeExtension<AppTypographyExtention> {
     required this.bodyLargeSemiBold,
     required this.bodyLargeBold,
     required this.caption,
-    required this.buttontxt,
+    required this.buttonTxt,
   });
 
   @override
-  ThemeExtension<AppTypographyExtention> copyWith({
+  ThemeExtension<TypographyExtention> copyWith({
     TextStyle? h1,
     TextStyle? h2,
     TextStyle? h3,
@@ -53,10 +53,10 @@ class AppTypographyExtention extends ThemeExtension<AppTypographyExtention> {
     TextStyle? bodyLargeSemiBold,
     TextStyle? bodyLargeBold,
     TextStyle? caption,
-    TextStyle? buttontxt,
+    TextStyle? buttonTxt,
     TextStyle? button2,
   }) {
-    return AppTypographyExtention(
+    return TypographyExtention(
       h1: h1 ?? this.h1,
       h2: h2 ?? this.h2,
       h3: h3 ?? this.h3,
@@ -71,17 +71,17 @@ class AppTypographyExtention extends ThemeExtension<AppTypographyExtention> {
       bodyLargeSemiBold: bodyLargeSemiBold ?? this.bodyLargeSemiBold,
       bodyLargeBold: bodyLargeBold ?? this.bodyLargeBold,
       caption: caption ?? this.caption,
-      buttontxt: buttontxt ?? this.buttontxt,
+      buttonTxt: buttonTxt ?? this.buttonTxt,
     );
   }
 
   @override
-  ThemeExtension<AppTypographyExtention> lerp(
-      covariant ThemeExtension<AppTypographyExtention>? other, double t) {
-    if (other is! AppTypographyExtention) {
+  ThemeExtension<TypographyExtention> lerp(
+      covariant ThemeExtension<TypographyExtention>? other, double t) {
+    if (other is! TypographyExtention) {
       return this;
     }
-    return AppTypographyExtention(
+    return TypographyExtention(
       h1: TextStyle.lerp(h1, other.h1, t)!,
       h2: TextStyle.lerp(h2, other.h2, t)!,
       h3: TextStyle.lerp(h3, other.h3, t)!,
@@ -98,7 +98,7 @@ class AppTypographyExtention extends ThemeExtension<AppTypographyExtention> {
           TextStyle.lerp(bodyLargeSemiBold, other.bodyLargeSemiBold, t)!,
       bodyLargeBold: TextStyle.lerp(bodyLargeBold, other.bodyLargeBold, t)!,
       caption: TextStyle.lerp(caption, other.caption, t)!,
-      buttontxt: TextStyle.lerp(buttontxt, other.buttontxt, t)!,
+      buttonTxt: TextStyle.lerp(buttonTxt, other.buttonTxt, t)!,
     );
   }
 }
