@@ -1,57 +1,98 @@
 import 'package:flutter/material.dart';
 import 'package:laundry_bin/core/theme/color_palette.dart';
-import 'package:laundry_bin/core/theme/extentions/app_typography_extention.dart';
-import 'package:laundry_bin/core/theme/extentions/appcolor_extention.dart';
+import 'package:laundry_bin/core/theme/extensions/app_typography_extention.dart';
+import 'package:laundry_bin/core/theme/extensions/appcolor_extention.dart';
+import 'package:laundry_bin/gen/fonts.gen.dart';
 
 final lighttheme = ThemeData(
     brightness: Brightness.light,
-    scaffoldBackgroundColor: AppColorPalette.light300,
+    scaffoldBackgroundColor: AppColorPalette.blue10,
     appBarTheme: AppBarTheme(backgroundColor: AppColorPalette.white400),
     extensions: [
       AppcolorExtention(
           primary: AppColorPalette.blue400,
           primarytxt: AppColorPalette.black400,
           secondarytxt: AppColorPalette.bluegrey400,
-          bg: AppColorPalette.light300,
-          light: AppColorPalette.light400,
+          bg: AppColorPalette.blue10,
+          light: AppColorPalette.blue20,
           white: AppColorPalette.white400,
           warning: AppColorPalette.red400,
           green: AppColorPalette.green400,
-          bg02: AppColorPalette.blue300),
+          bg2: AppColorPalette.blue300),
       AppTypographyExtention(
         h1: TextStyle(
             fontSize: 34,
-            fontFamily: 'DMSans',
+            fontFamily: FontFamily.dMSans,
             color: AppColorPalette.black400,
             fontWeight: FontWeight.bold),
         h2: TextStyle(
             fontSize: 24,
-            fontFamily: 'DMSans',
+            fontFamily: FontFamily.dMSans,
             color: AppColorPalette.black400,
             fontWeight: FontWeight.bold),
         h3: TextStyle(
             fontSize: 20,
-            fontFamily: 'DMSans',
+            fontFamily: FontFamily.dMSans,
             color: AppColorPalette.black400,
             fontWeight: FontWeight.bold),
         subtitle1: TextStyle(
             fontSize: 14,
-            fontFamily: 'DMSans',
+            fontFamily: FontFamily.dMSans,
             color: AppColorPalette.black400,
             fontWeight: FontWeight.bold),
         body: TextStyle(
             fontSize: 14,
-            fontFamily: 'DMSans',
+            fontFamily: FontFamily.dMSans,
             color: AppColorPalette.black400,
             fontWeight: FontWeight.w500),
+        bodySemiBold: TextStyle(
+            fontSize: 14,
+            fontFamily: FontFamily.dMSans,
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w600),
+        bodyBold: TextStyle(
+            fontSize: 18,
+            fontFamily: FontFamily.dMSans,
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.bold),
+        bodySmall: TextStyle(
+            fontSize: 12,
+            fontFamily: FontFamily.dMSans,
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w500),
+        bodySmallBold: TextStyle(
+            fontSize: 12,
+            fontFamily: FontFamily.dMSans,
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w600),
+        bodySmallSemiBold: TextStyle(
+            fontSize: 12,
+            fontFamily: FontFamily.dMSans,
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.bold),
+        bodyLarge: TextStyle(
+            fontSize: 18,
+            fontFamily: FontFamily.dMSans,
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w500),
+        bodyLargeSemiBold: TextStyle(
+            fontSize: 18,
+            fontFamily: FontFamily.dMSans,
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.w600),
+        bodyLargeBold: TextStyle(
+            fontSize: 18,
+            fontFamily: FontFamily.dMSans,
+            color: AppColorPalette.black400,
+            fontWeight: FontWeight.bold),
         caption: TextStyle(
             fontSize: 12,
-            fontFamily: 'DMSans',
+            fontFamily: FontFamily.dMSans,
             color: AppColorPalette.black400,
             fontWeight: FontWeight.w500),
         buttontxt: TextStyle(
-            fontSize: 16,
-            fontFamily: 'DMSans',
+            fontSize: 14,
+            fontFamily: FontFamily.dMSans,
             color: AppColorPalette.black400,
             fontWeight: FontWeight.bold),
       ),

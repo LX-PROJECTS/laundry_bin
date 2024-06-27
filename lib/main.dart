@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:laundry_bin/gen/assets.gen.dart';
 
 void main() {
   runApp(const MyApp());
