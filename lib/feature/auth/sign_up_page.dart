@@ -10,7 +10,8 @@ class SignUp extends StatelessWidget {
         title: Text("SignUp"),
       ),
       body: Center(
-        child: Text("Sign up page"),
+        child: Text("Sign up page"
+        ),
       ),
     );
   }
