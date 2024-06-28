@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:laundry_bin/gen/assets.gen.dart';
-import 'package:laundry_bin/extension.dart';
-import 'package:laundry_bin/gen/assets.gen.dart';
 import 'package:laundry_bin/l10n/gen/app_localizations.dart';
 
 void main() {
@@ -20,7 +18,7 @@ class App extends StatelessWidget {
       home: Builder(
         builder: (context) {
           return Center(
-            child: Image.asset(Assets.icons.shorts),
+            child: Image.asset(Assets.icons.icScented),
           );
         },
       ),
