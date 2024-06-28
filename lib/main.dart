@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:laundry_bin/core/routers/router.dart';
 import 'package:laundry_bin/gen/assets.gen.dart';
 import 'package:laundry_bin/l10n/gen/app_localizations.dart';
 
@@ -11,16 +12,14 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      locale: const Locale('en'),
-      supportedLocales: AppLocalizations.supportedLocales,
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      home: Builder(
-        builder: (context) {
-          return Center(
-            child: Image.asset(Assets.icons.icScented),
-          );
-        },
+    return MaterialApp.router(
+      routerDelegate: router.routerDelegate,
+      routeInformationParser: router.routeInformationParser,
+      routeInformationProvider: router.routeInformationProvider,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
     );
   }

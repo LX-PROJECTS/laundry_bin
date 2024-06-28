@@ -261,6 +261,12 @@ class $AssetsIconsGen {
   String get iconWashingIronHomescreen =>
       'assets/icons/icon_washing+iron(homescreen).svg';
 
+  /// File path: assets/icons/shirt.svg
+  String get shirt => 'assets/icons/shirt.svg';
+
+  /// File path: assets/icons/shorts.svg
+  String get shorts => 'assets/icons/shorts.svg';
+
   /// List of all assets
   List<String> get values => [
         icPickupPoint,
@@ -338,7 +344,9 @@ class $AssetsIconsGen {
         iconTickCircleHomescreen,
         iconUserHomescreen,
         iconWashingHomescreen,
-        iconWashingIronHomescreen
+        iconWashingIronHomescreen,
+        shirt,
+        shorts
       ];
 }
 
@@ -378,6 +386,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/img_washing-page.svg
   String get imgWashingPage => 'assets/images/img_washing-page.svg';
 
+  /// File path: assets/images/washing.svg
+  String get washing => 'assets/images/washing.svg';
+
   /// List of all assets
   List<String> get values => [
         imgEllipse90BookingPage,
@@ -389,7 +400,8 @@ class $AssetsImagesGen {
         imgOnbord,
         imgShirtProfilePage,
         imgWashingMachineBookingPage,
-        imgWashingPage
+        imgWashingPage,
+        washing
       ];
 }
 
