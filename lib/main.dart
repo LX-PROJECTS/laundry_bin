@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:laundry_bin/core/routers/router.dart';
 import 'package:laundry_bin/gen/assets.gen.dart';
+import 'package:laundry_bin/l10n/gen/app_localizations.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class App extends StatelessWidget {
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {
