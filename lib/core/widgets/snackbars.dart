@@ -1,33 +1,47 @@
 import 'package:flutter/material.dart';
+import 'package:laundry_bin/main.dart';
 
 class Errorsnackbar extends SnackBar {
   final String errorMessage;
 
-  Errorsnackbar({required this.errorMessage, bool? showretry, super.key})
+  Errorsnackbar({required this.errorMessage, bool showretry = false, super.key})
       : super(
+            margin: const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
             content: Text(
               errorMessage,
-              style: const TextStyle(),
+              textAlign: TextAlign.center,
+              style: Theme.of(Myapp.navigatorkey.currentContext!)
+                  .textTheme
+                  .titleMedium,
             ),
+            duration: const Duration(milliseconds: 2500),
             behavior: SnackBarBehavior.floating,
-            action: (showretry ?? false)
-                ? SnackBarAction(label: "retry", onPressed: () {})
+            backgroundColor: Color.fromARGB(255, 253, 183, 190),
+            action: (showretry)
+                ? SnackBarAction(
+                    label: "retry", textColor: Colors.black, onPressed: () {})
                 : null);
 }
 
 class Warningsnackbar extends SnackBar {
   final String warningMessage;
 
-  Warningsnackbar({required this.warningMessage, bool? showretry, super.key})
+  Warningsnackbar({required this.warningMessage, super.key})
       : super(
-            content: Text(
-              warningMessage,
-              style: const TextStyle(),
-            ),
-            behavior: SnackBarBehavior.floating,
-            action: (showretry ?? false)
-                ? SnackBarAction(label: "retry", onPressed: () {})
-                : null);
+          margin: const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+          content: Text(warningMessage,
+              textAlign: TextAlign.center,
+              style: Theme.of(Myapp.navigatorkey.currentContext!)
+                  .textTheme
+                  .titleMedium),
+          duration: const Duration(milliseconds: 2500),
+          backgroundColor: Color.fromARGB(255, 255, 235, 144),
+          behavior: SnackBarBehavior.floating,
+        );
 }
 
 class SuccessSnackbar extends SnackBar {
@@ -35,9 +49,17 @@ class SuccessSnackbar extends SnackBar {
 
   SuccessSnackbar({required this.successMessage, super.key})
       : super(
+            margin: const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
             content: Text(
+              textAlign: TextAlign.center,
               successMessage,
-              style: const TextStyle(),
+              style: Theme.of(Myapp.navigatorkey.currentContext!)
+                  .textTheme
+                  .titleMedium,
             ),
+            duration: Duration(milliseconds: 2500),
+            backgroundColor: Color.fromARGB(255, 162, 242, 173),
             behavior: SnackBarBehavior.floating);
 }

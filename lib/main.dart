@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:laundry_bin/features/signup/page/signup.dart';
+import 'package:laundry_bin/features/signup/page/sign_Up.dart';
 
 void main() {
   runApp(const Myapp());
@@ -14,8 +14,9 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         scaffoldMessengerKey: scaffoldMessengerKey,
-        home: Scaffold(backgroundColor:Color(0xff1FACF3),
-          body: Center(child: AppTextField()),
+        home: Scaffold(
+          backgroundColor: Color(0xff1FACF3),
+          body: Center(child: SignUp()),
         ));
   }
 }
