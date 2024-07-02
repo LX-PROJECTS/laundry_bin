@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:laundry_bin/features/signup/page/sign_Up.dart';
+import 'package:laundry_bin/core/utils/snackbar.dart';
 
 void main() {
   runApp(const Myapp());
@@ -7,6 +7,7 @@ void main() {
 
 class Myapp extends StatelessWidget {
   static final scaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
+  static final navigatorkey = GlobalKey<NavigatorState>();
   const Myapp({super.key});
 
   @override
@@ -14,9 +15,7 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         scaffoldMessengerKey: scaffoldMessengerKey,
-        home: Scaffold(
-          backgroundColor: Color(0xff1FACF3),
-          body: Center(child: SignUp()),
-        ));
+        navigatorKey: navigatorkey,
+        home: Scaffold());
   }
 }
