@@ -115,4 +115,6 @@ class AppSpaceExtension extends ThemeExtension<AppSpaceExtension> {
       space_900: lerpDouble(space_900, other.space_900, t)!,
     );
   }
+
 }
+
