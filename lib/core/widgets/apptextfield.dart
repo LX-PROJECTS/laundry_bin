@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:laundry_bin/core/extension/theme_extension.dart';
 import 'package:laundry_bin/core/widgets/textfield_decor.dart';
 import 'package:laundry_bin/gen/assets.gen.dart';
 
@@ -57,7 +58,7 @@ class AppTextField extends HookWidget {
               : null,
           contentPadding: const EdgeInsets.only(left: 32, top: 24),
           hintText: hintText,
-          hintStyle: TextStyle(color: Color(0xff8391A1)),
+          hintStyle: TextStyle(color: context.colors.hintTxt),
           border: const OutlineInputBorder(
               borderSide: BorderSide(color: Colors.transparent)),
           enabledBorder: const OutlineInputBorder(
