@@ -49,7 +49,8 @@ class SignUpPage extends StatelessWidget {
                     ConstrainedBox(
                       constraints: const BoxConstraints(maxWidth: 800),
                       child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 38),
+                        padding: EdgeInsets.symmetric(
+                            horizontal: context.space.space_500),
                         child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
@@ -57,20 +58,20 @@ class SignUpPage extends StatelessWidget {
                                 hintText:
                                     AppLocalizations.of(context)!.enterName,
                               ),
-                              const SizedBox(height: 16),
+                              SizedBox(height: context.space.space_200),
                               AppTextField(
                                   hintText: AppLocalizations.of(context)!
                                       .enterEmailOrNumber),
-                              const SizedBox(height: 16),
+                              SizedBox(height: context.space.space_200),
                               AppTextField(
                                   obscureText: true,
                                   hintText: AppLocalizations.of(context)!
                                       .enterPassword),
-                              const SizedBox(height: 16),
+                              SizedBox(height: context.space.space_200),
                               AppTextField(
                                   hintText: AppLocalizations.of(context)!
                                       .confirmPassword),
-                              const SizedBox(height: 16),
+                              SizedBox(height: context.space.space_200),
                               ButtonWhite(
                                   onTap: () {
                                     if (kDebugMode) {
@@ -78,16 +79,18 @@ class SignUpPage extends StatelessWidget {
                                     }
                                   },
                                   name: AppLocalizations.of(context)!.register),
-                              const SizedBox(height: 16),
+                              SizedBox(height: context.space.space_200),
                             ]),
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 40),
+                      padding: EdgeInsets.symmetric(
+                          horizontal: context.space.space_500),
                       child: Wrap(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(right: 10),
+                            padding:
+                                EdgeInsets.only(right: context.space.space_125),
                             child: Text(
                               AppLocalizations.of(context)!.alreadyAc,
                               style: context.typography.body

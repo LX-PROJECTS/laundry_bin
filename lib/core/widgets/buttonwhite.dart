@@ -6,16 +6,12 @@ import 'package:laundry_bin/core/extension/theme_extension.dart';
 class ButtonWhite extends StatelessWidget {
   final String name;
   final VoidCallback? onTap;
-  final double height;
   final double width;
-  final double borderRadius;
 
   const ButtonWhite({
     this.name = "Register",
     this.onTap,
-    this.height = 50,
     this.width = double.infinity,
-    this.borderRadius = 30,
     super.key,
   });
 
@@ -24,10 +20,10 @@ class ButtonWhite extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: height,
+        height: context.space.space_600,
         width: width,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(borderRadius),
+          borderRadius: BorderRadius.circular(context.space.space_400),
           color: context.colors.white,
         ),
         child: Center(

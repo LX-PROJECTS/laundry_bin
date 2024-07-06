@@ -28,7 +28,7 @@ class AppTextField extends HookWidget {
 
     return Container(
       decoration: textfeildDecor(),
-      height: 50,
+      height: context.space.space_600,
       width: double.infinity,
       child: TextField(
         controller: controller,
@@ -40,11 +40,11 @@ class AppTextField extends HookWidget {
               ? GestureDetector(
                   onTap: toggleShowPassword,
                   child: SizedBox(
-                    width: 30,
+                    width: context.space.space_400,
                     child: Center(
                       child: SizedBox(
-                        height: 20,
-                        width: 20,
+                        height: context.space.space_250,
+                        width: context.space.space_250,
                         child: SvgPicture.asset(
                           isPasswordHidden.value
                               ? Assets.icons.icInvisibleEye
@@ -56,7 +56,8 @@ class AppTextField extends HookWidget {
                   ),
                 )
               : null,
-          contentPadding: const EdgeInsets.only(left: 32, top: 24),
+          contentPadding: EdgeInsets.only(
+              left: context.space.space_400, top: context.space.space_300),
           hintText: hintText,
           hintStyle: TextStyle(color: context.colors.hintTxt),
           border: const OutlineInputBorder(
