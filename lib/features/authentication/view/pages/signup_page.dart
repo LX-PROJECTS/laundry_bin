@@ -45,7 +45,7 @@ class SignUpPage extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    const SizedBox(height: 110),
+                    const SizedBox(height: 175),
                     ConstrainedBox(
                       constraints: const BoxConstraints(maxWidth: 800),
                       child: Padding(
@@ -79,7 +79,7 @@ class SignUpPage extends StatelessWidget {
                                     }
                                   },
                                   name: AppLocalizations.of(context)!.register),
-                              SizedBox(height: context.space.space_200),
+                              SizedBox(height: context.space.space_300),
                             ]),
                       ),
                     ),
