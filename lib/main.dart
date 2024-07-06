@@ -3,7 +3,6 @@ import 'package:laundry_bin/core/routers/router.dart';
 import 'package:laundry_bin/core/theme/light_theme.dart';
 import 'package:laundry_bin/l10n/genarated/app_localizations.dart';
 
-
 void main() {
   runApp(const Myapp());
 }
@@ -15,15 +14,12 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    return MaterialApp.router(debugShowCheckedModeBanner: false,
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
+    return MaterialApp.router(
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
-        routerDelegate: router.routerDelegate,
-        routeInformationParser: router.routeInformationParser,
-        routeInformationProvider: router.routeInformationProvider,
+        debugShowCheckedModeBanner: false,
+        routerConfig: router,
         title: 'Flutter Demo',
         theme: lightTheme);
-
   }
 }

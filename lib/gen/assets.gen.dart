@@ -67,6 +67,9 @@ class $AssetsIconsGen {
   String get icArrowRightSplashScreen =>
       'assets/icons/ic_arrow-right(splash-screen).svg';
 
+  /// File path: assets/icons/ic_arrow_left_white.svg
+  String get icArrowLeftWhite => 'assets/icons/ic_arrow_left_white.svg';
+
   /// File path: assets/icons/ic_building(location).svg
   String get icBuildingLocation => 'assets/icons/ic_building(location).svg';
 
@@ -126,6 +129,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/ic_google-pay.svg
   String get icGooglePay => 'assets/icons/ic_google-pay.svg';
+
+  /// File path: assets/icons/ic_invisible_eye.svg
+  String get icInvisibleEye => 'assets/icons/ic_invisible_eye.svg';
 
   /// File path: assets/icons/ic_jacket(Washing-page).svg
   String get icJacketWashingPage => 'assets/icons/ic_jacket(Washing-page).svg';
@@ -187,6 +193,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/ic_visa.svg
   String get icVisa => 'assets/icons/ic_visa.svg';
+
+  /// File path: assets/icons/ic_visible_eye.svg
+  String get icVisibleEye => 'assets/icons/ic_visible_eye.svg';
 
   /// File path: assets/icons/ic_washing(Tracking-page).svg
   String get icWashingTrackingPage =>
@@ -280,6 +289,7 @@ class $AssetsIconsGen {
         icArrowRightFAQ,
         icArrowRightWashingPage,
         icArrowRightSplashScreen,
+        icArrowLeftWhite,
         icBuildingLocation,
         icCalendarDOB,
         icCalendarTrackingPage,
@@ -298,6 +308,7 @@ class $AssetsIconsGen {
         icFloorNumber,
         icFluentEyeAuthScreen,
         icGooglePay,
+        icInvisibleEye,
         icJacketWashingPage,
         icLocationBlue,
         icLocationPin,
@@ -318,6 +329,7 @@ class $AssetsIconsGen {
         icTruckTrackingPage,
         icUpi,
         icVisa,
+        icVisibleEye,
         icWashingTrackingPage,
         iconStarRating,
         iconArrowDownHomescreen,
