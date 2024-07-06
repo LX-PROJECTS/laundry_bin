@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:laundry_bin/core/extension/theme_extension.dart';
 
@@ -22,9 +21,6 @@ class ButtonWhite extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (kDebugMode) {
-      print("Button pressed: $name");
-    }
     return GestureDetector(
       onTap: onTap,
       child: Container(

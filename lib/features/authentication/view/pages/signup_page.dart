@@ -26,17 +26,14 @@ class SignUpPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const SizedBox(height: 125),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 118),
-              child: Center(
-                child: SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.4,
-                  child: Text(
-                      textAlign: TextAlign.center,
-                      AppLocalizations.of(context)!.registerPageHeading,
-                      style: context.typography.h2
-                          .copyWith(color: context.colors.white)),
-                ),
+            Center(
+              child: SizedBox(
+                width: MediaQuery.of(context).size.width * 0.4,
+                child: Text(
+                    textAlign: TextAlign.center,
+                    AppLocalizations.of(context)!.registerPageHeading,
+                    style: context.typography.h2
+                        .copyWith(color: context.colors.white)),
               ),
             ),
             Stack(
@@ -47,7 +44,6 @@ class SignUpPage extends StatelessWidget {
                   child: SvgPicture.asset(Assets.images.imgAuthBackground),
                 ),
                 Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const SizedBox(height: 110),
                     ConstrainedBox(
@@ -67,6 +63,7 @@ class SignUpPage extends StatelessWidget {
                                       .enterEmailOrNumber),
                               const SizedBox(height: 16),
                               AppTextField(
+                                  obscureText: true,
                                   hintText: AppLocalizations.of(context)!
                                       .enterPassword),
                               const SizedBox(height: 16),
