@@ -13,6 +13,8 @@ class ColorExtention extends ThemeExtension<ColorExtention> {
   final Color background;
   final Color btnShadow;
   final Color containerShadow;
+  final Color grey;
+  final Color hintTxt;
   ColorExtention({
     required this.primary,
     required this.primaryTxt,
@@ -24,6 +26,8 @@ class ColorExtention extends ThemeExtension<ColorExtention> {
     required this.background,
     required this.btnShadow,
     required this.containerShadow,
+    required this.grey,
+    required this.hintTxt,
   });
   @override
   ThemeExtension<ColorExtention> copyWith({
@@ -37,19 +41,22 @@ class ColorExtention extends ThemeExtension<ColorExtention> {
     Color? background,
     Color? btnShadow,
     Color? containerShadow,
+    Color? grey,
+    Color? hintTxt,
   }) {
     return ColorExtention(
-      primary: primary ?? this.primary,
-      primaryTxt: primaryTxt ?? this.primaryTxt,
-      secondaryTxt: secondaryTxt ?? this.secondaryTxt,
-      backgroundSubtle: backgroundSubtle ?? this.backgroundSubtle,
-      white: white ?? this.white,
-      warning: warning ?? this.warning,
-      green: green ?? this.green,
-      background: background ?? this.background,
-      btnShadow: btnShadow ?? this.btnShadow,
-      containerShadow: containerShadow ?? this.containerShadow,
-    );
+        primary: primary ?? this.primary,
+        primaryTxt: primaryTxt ?? this.primaryTxt,
+        secondaryTxt: secondaryTxt ?? this.secondaryTxt,
+        backgroundSubtle: backgroundSubtle ?? this.backgroundSubtle,
+        white: white ?? this.white,
+        warning: warning ?? this.warning,
+        green: green ?? this.green,
+        background: background ?? this.background,
+        btnShadow: btnShadow ?? this.btnShadow,
+        containerShadow: containerShadow ?? this.containerShadow,
+        grey: grey ?? this.grey,
+        hintTxt: hintTxt ?? this.hintTxt);
   }
 
   @override
@@ -69,7 +76,8 @@ class ColorExtention extends ThemeExtension<ColorExtention> {
         green: Color.lerp(green, other.green, t)!,
         background: Color.lerp(background, other.background, t)!,
         btnShadow: Color.lerp(btnShadow, other.btnShadow, t)!,
-        containerShadow:
-            Color.lerp(containerShadow, other.containerShadow, t)!);
+        containerShadow: Color.lerp(containerShadow, other.containerShadow, t)!,
+        grey: Color.lerp(grey, other.grey, t)!,
+        hintTxt: Color.lerp(hintTxt, other.hintTxt, t)!);
   }
 }
