@@ -345,6 +345,9 @@ class $AssetsIconsGen {
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/Laundrybin.svg
+  String get laundrybin => 'assets/images/Laundrybin.svg';
+
   /// File path: assets/images/img_Ellipse 90(booking-page).svg
   String get imgEllipse90BookingPage =>
       'assets/images/img_Ellipse 90(booking-page).svg';
@@ -365,31 +368,44 @@ class $AssetsImagesGen {
   /// File path: assets/images/img_offer(homescreen).svg
   String get imgOfferHomescreen => 'assets/images/img_offer(homescreen).svg';
 
+  /// File path: assets/images/img_onboard_washing_mechne.svg
+  String get imgOnboardWashingMechne =>
+      'assets/images/img_onboard_washing_mechne.svg';
+
+  /// File path: assets/images/img_onboarding_first.svg
+  String get imgOnboardingFirst => 'assets/images/img_onboarding_first.svg';
+
   /// File path: assets/images/img_onbord.svg
   String get imgOnbord => 'assets/images/img_onbord.svg';
 
   /// File path: assets/images/img_shirt(profile-page).svg
   String get imgShirtProfilePage => 'assets/images/img_shirt(profile-page).svg';
 
-  /// File path: assets/images/img_washing-machine(booking-page).svg
-  String get imgWashingMachineBookingPage =>
-      'assets/images/img_washing-machine(booking-page).svg';
+  /// File path: assets/images/img_wash_onboard.svg
+  String get imgWashOnboard => 'assets/images/img_wash_onboard.svg';
 
   /// File path: assets/images/img_washing-page.svg
   String get imgWashingPage => 'assets/images/img_washing-page.svg';
 
+  /// File path: assets/images/onBoarding_button.svg
+  String get onBoardingButton => 'assets/images/onBoarding_button.svg';
+
   /// List of all assets
   List<String> get values => [
+        laundrybin,
         imgEllipse90BookingPage,
         imgEllipse91BookingPage,
         imgTrackingPage,
         imgAuthBackground,
         imgBgRecepit,
         imgOfferHomescreen,
+        imgOnboardWashingMechne,
+        imgOnboardingFirst,
         imgOnbord,
         imgShirtProfilePage,
-        imgWashingMachineBookingPage,
-        imgWashingPage
+        imgWashOnboard,
+        imgWashingPage,
+        onBoardingButton
       ];
 }
 
