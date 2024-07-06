@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:laundry_bin/core/extension/theme_extension.dart';
-import 'package:laundry_bin/core/widgets/textfield_decor.dart';
 import 'package:laundry_bin/gen/assets.gen.dart';
 
 ///Textfield for register,login pages
