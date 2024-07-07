@@ -6,8 +6,8 @@ import 'package:laundry_bin/core/widgets/apptextfield.dart';
 import 'package:laundry_bin/core/widgets/buttonwhite.dart';
 import 'package:laundry_bin/gen/assets.gen.dart';
 
-class SigninPage extends StatelessWidget {
-  const SigninPage({super.key});
+class SignUpPage extends StatelessWidget {
+  const SignUpPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,11 +31,14 @@ class SigninPage extends StatelessWidget {
                       )),
                   const Spacer(flex: 2),
                   Center(
-                      child: Text(context.l10n.loginPageHeading,
+                      child: Text(context.l10n.registerPageHeading,
                           textAlign: TextAlign.center,
                           style: context.typography.h2
                               .copyWith(color: context.colors.white))),
                   const Spacer(flex: 3),
+                  AppTextField(
+                    hintText: context.l10n.enterName,
+                  ),
                   SizedBox(height: context.space.space_200),
                   AppTextField(hintText: context.l10n.enterEmailOrNumber),
                   SizedBox(height: context.space.space_200),
@@ -44,14 +47,14 @@ class SigninPage extends StatelessWidget {
                     obscureText: true,
                   ),
                   SizedBox(height: context.space.space_200),
-                  ButtonWhite(
-                    name: context.l10n.login,
-                  ),
+                  AppTextField(hintText: context.l10n.confirmPassword),
+                  SizedBox(height: context.space.space_200),
+                  const ButtonWhite(),
                   const Spacer(flex: 2),
                   Center(
                     child: Wrap(children: [
                       Text(
-                        context.l10n.dontHaveAc,
+                        context.l10n.alreadyAc,
                         style: context.typography.body
                             .copyWith(color: context.colors.white),
                       ),
@@ -59,7 +62,7 @@ class SigninPage extends StatelessWidget {
                       GestureDetector(
                         onTap: () {},
                         child: Text(
-                          context.l10n.registerNow,
+                          context.l10n.login,
                           style: TextStyle(
                               color: context.colors.white,
                               decoration: TextDecoration.underline,
