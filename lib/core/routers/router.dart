@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:laundry_bin/features/authentication/view/pages/forgot_password_page.dart';
 import 'package:laundry_bin/features/authentication/view/pages/sign_up_page.dart';
 import 'package:laundry_bin/features/authentication/view/pages/signin_page.dart';
 import 'package:laundry_bin/features/auth/Sign_in_page.dart';
@@ -10,7 +11,7 @@ import 'package:laundry_bin/splash_screen/splash_screen.dart';
 final GoRouter router = GoRouter(routes: <GoRoute>[
   GoRoute(
     path: '/',
-    builder: (context, state) => const SigninPage(),
+    builder: (context, state) => const ForgotPassword(),
   ),
   GoRoute(
     path: '/signin',
