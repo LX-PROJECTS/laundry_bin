@@ -12,7 +12,7 @@
     "login": "Log In",
     "register": "Register",
     "@__REGISTER_PAGE": {},
-        "registerPageHeading": "Hey There ! Welcome",
+        "registerPageHeading": "Hey There !\n Welcome",
         "enterName": "Enter Name",
         "enterEmailOrNumber": "Enter Email ID or Phone Number",
         "enterPassword": "Enter your password",
