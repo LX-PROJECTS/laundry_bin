@@ -65,10 +65,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get registerNow => 'Register Now';
 
   @override
-  String get otpPageHeading => 'We have sent You An OTP';
+  String get otpPageHeading => 'We have sent\n You An OTP';
 
   @override
-  String get dontReceiveOtp => 'Don\'t receive OTP?';
+  String get dontReceiveOtp => 'Didn\'t receive OTP?';
 
   @override
   String get resendOtp => 'RESEND OTP';
@@ -92,7 +92,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get otpVerificationHeading => 'OTP Verification';
 
   @override
-  String get otpVerificationSubTitle => 'Enter the verification code we just sent on your email address.';
+  String get otpVerificationSubTitle => 'Enter the verification code we just sent on\n your email address.';
 
   @override
   String get verify => 'Verify';
@@ -119,7 +119,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get passwordChangedHeading => 'Password Changed!';
 
   @override
-  String get passwordChangedSubTitle => 'Your password has been changed successfully.';
+  String get passwordChangedSubTitle => 'Your password has been\n changed successfully.';
 
   @override
   String get backToLogin => 'Back to Login';

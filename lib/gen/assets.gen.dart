@@ -360,6 +360,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/Laundrybin.svg
   String get laundrybin => 'assets/images/Laundrybin.svg';
 
+  /// File path: assets/images/ic_laundry_&_ic_logo_combined.svg
+  String get icLaundryIcLogoCombined =>
+      'assets/images/ic_laundry_&_ic_logo_combined.svg';
+
   /// File path: assets/images/img_Ellipse 90(booking-page).svg
   String get imgEllipse90BookingPage =>
       'assets/images/img_Ellipse 90(booking-page).svg';
@@ -405,6 +409,7 @@ class $AssetsImagesGen {
   /// List of all assets
   List<String> get values => [
         laundrybin,
+        icLaundryIcLogoCombined,
         imgEllipse90BookingPage,
         imgEllipse91BookingPage,
         imgTrackingPage,

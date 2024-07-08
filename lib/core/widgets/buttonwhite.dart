@@ -7,9 +7,13 @@ class ButtonWhite extends StatelessWidget {
   final String name;
   final VoidCallback? onTap;
   final double width;
+  final Color? color;
+  final Color? hintTextcolor;
 
   const ButtonWhite({
     this.name = "Register",
+    this.color,
+    this.hintTextcolor,
     this.onTap,
     this.width = double.infinity,
     super.key,
@@ -23,14 +27,15 @@ class ButtonWhite extends StatelessWidget {
         height: context.space.space_600,
         width: width,
         decoration: BoxDecoration(
+          border: Border.all(color: context.colors.white),
           borderRadius: BorderRadius.circular(context.space.space_400),
-          color: context.colors.white,
+          color: color ?? context.colors.white,
         ),
         child: Center(
           child: Text(
             name,
             style: context.typography.bodyLargeMedium
-                .copyWith(color: context.colors.primary),
+                .copyWith(color: hintTextcolor ?? context.colors.primary),
           ),
         ),
       ),

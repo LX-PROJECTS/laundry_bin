@@ -6,8 +6,8 @@ import 'package:laundry_bin/core/widgets/apptextfield.dart';
 import 'package:laundry_bin/core/widgets/buttonwhite.dart';
 import 'package:laundry_bin/gen/assets.gen.dart';
 
-class ForgotPassword extends StatelessWidget {
-  const ForgotPassword({super.key});
+class NewpasswordPage extends StatelessWidget {
+  const NewpasswordPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class ForgotPassword extends StatelessWidget {
                       )),
                   const Spacer(flex: 2),
                   Center(
-                      child: Text(context.l10n.forgotPasswordHeading,
+                      child: Text(context.l10n.newPasswordHeading,
                           textAlign: TextAlign.center,
                           style: context.typography.h2
                               .copyWith(color: context.colors.white))),
@@ -41,23 +41,25 @@ class ForgotPassword extends StatelessWidget {
                   ),
                   Center(
                     child: Text(
-                      context.l10n.forgotPasswordSubTitle,
+                      context.l10n.newPasswordSubTitle,
                       style: context.typography.body
                           .copyWith(color: context.colors.white),
                       textAlign: TextAlign.center,
                     ),
                   ),
                   const Spacer(flex: 3),
-                  AppTextField(hintText: context.l10n.enterEmailOrNumber),
+                  AppTextField(hintText: context.l10n.enterNewPassword),
+                  SizedBox(height: context.space.space_200),
+                  AppTextField(hintText: context.l10n.confirmPassword),
                   SizedBox(height: context.space.space_200),
                   ButtonWhite(
-                    name: context.l10n.sendOtp,
+                    name: context.l10n.resetPassword,
                   ),
                   const Spacer(flex: 2),
                   Center(
                     child: Wrap(children: [
                       Text(
-                        context.l10n.rememberPassword,
+                        context.l10n.didntReceivedCode,
                         style: context.typography.body
                             .copyWith(color: context.colors.white),
                       ),
@@ -65,7 +67,7 @@ class ForgotPassword extends StatelessWidget {
                       GestureDetector(
                         onTap: () {},
                         child: Text(
-                          context.l10n.login,
+                          context.l10n.resend,
                           style: TextStyle(
                               color: context.colors.white,
                               decoration: TextDecoration.underline,

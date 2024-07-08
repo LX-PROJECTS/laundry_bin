@@ -214,13 +214,13 @@ abstract class AppLocalizations {
   /// No description provided for @otpPageHeading.
   ///
   /// In en, this message translates to:
-  /// **'We have sent You An OTP'**
+  /// **'We have sent\n You An OTP'**
   String get otpPageHeading;
 
   /// No description provided for @dontReceiveOtp.
   ///
   /// In en, this message translates to:
-  /// **'Don\'t receive OTP?'**
+  /// **'Didn\'t receive OTP?'**
   String get dontReceiveOtp;
 
   /// No description provided for @resendOtp.
@@ -268,7 +268,7 @@ abstract class AppLocalizations {
   /// No description provided for @otpVerificationSubTitle.
   ///
   /// In en, this message translates to:
-  /// **'Enter the verification code we just sent on your email address.'**
+  /// **'Enter the verification code we just sent on\n your email address.'**
   String get otpVerificationSubTitle;
 
   /// No description provided for @verify.
@@ -322,7 +322,7 @@ abstract class AppLocalizations {
   /// No description provided for @passwordChangedSubTitle.
   ///
   /// In en, this message translates to:
-  /// **'Your password has been changed successfully.'**
+  /// **'Your password has been\n changed successfully.'**
   String get passwordChangedSubTitle;
 
   /// No description provided for @backToLogin.
