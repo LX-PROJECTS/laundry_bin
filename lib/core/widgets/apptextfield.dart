@@ -27,7 +27,7 @@ class AppTextField extends HookWidget {
 
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(color: Color(0xff1DADADA), width: 1),
+        border: Border.all(color: context.colors.hintTxt, width: 1),
         borderRadius: BorderRadius.circular(context.space.space_400),
         color: context.colors.backgroundSubtle,
       ),
